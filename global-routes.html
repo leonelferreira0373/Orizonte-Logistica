@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Routes | Orizonte Logística</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .routes-hero-bg {
+            background-image: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), url('https://images.unsplash.com/photo-1524522173746-f628baad3644?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .route-card:hover .route-icon {
+            transform: scale(1.1);
+            color: #f97316;
+        }
+
+        /* Estilo base para os links */
+        /* Navigation Base */
+        .nav-link {
+            transition: all 0.3s ease;
+            padding-bottom: 4px;
+        }
+
+        /* Desktop Highlight */
+        .nav-link-active {
+            color: #f97316 !important;
+            /* Orizonte Orange */
+            border-bottom: 2px solid #f97316;
+        }
+
+        /* Mobile Highlight */
+        .mobile-link-active {
+            color: #f97316 !important;
+            font-weight: bold;
+            border-left: 4px solid #f97316;
+            padding-left: 8px;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="bg-slate-900 text-gray-300 text-sm py-2">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="hidden md:flex space-x-6">
+                <a href="https://wa.me/qr/DVTDK7MCDLCLO1"><span><i class="fas fa-phone-alt mr-2 text-orange-500"></i> +244 945 32 11 86</span></a>
+                <a href="mailto:ferreira.korp@gmail.com"><span><i class="fas fa-envelope mr-2 text-orange-500"></i> ferreira.korp@gmail.com</span></a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="javascript:void(0)" id="lang-pt" class="hover:text-white transition">PT</a>
+                <span class="text-gray-600">|</span>
+                <a href="javascript:void(0)" id="lang-en" class="hover:text-white transition">EN</a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-slate-900 tracking-tighter flex items-center">
+                    <i class="fas fa-globe-africa text-orange-500 mr-2"></i>
+                    ORIZONTE <span class="text-slate-500 font-light ml-1">LOGÍSTICA</span>
+                </a>
+
+                <div class="hidden md:flex space-x-8 font-medium text-slate-700">
+                    <a href="index.html" class="nav-link hover:text-orange-500 transition">Home</a>
+                    <a href="services.html" class="nav-link hover:text-orange-500 transition">Services</a>
+                    <a href="global-routes.html" class="nav-link nav-link-active">Global Routes</a>
+                    <a href="about-us.html" class="nav-link hover:text-orange-500 transition">About Us</a>
+                    <a href="qoutes.html" class="bg-orange-500 text-white px-5 py-2 rounded hover:bg-orange-600 transition">Get a
+                    Quote</a>
+                </div>
+
+                <button id="mobile-menu-btn" class="md:hidden text-slate-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t p-4">
+            <a href="index.html" class="block py-2 text-slate-700">Home</a>
+            <a href="services.html" class="block py-2 text-slate-700">Services</a>
+            <a href="global-routes.html" class="block py-2 mobile-link-active">Global Routes</a>
+            <a href="about-us.html" class="block py-2 text-slate-700">About Us</a>
+            <a href="qoutes.html" class="block py-2 text-orange-600 font-bold">Get a Quote</a>
+        </div>
+
+    </nav>
+
+    <header class="routes-hero-bg h-[350px] flex items-center justify-center">
+        <div class="text-center text-white px-6">
+            <h1 class="text-4xl md:text-5xl font-bold mb-2">Our Global Network</h1>
+            <p class="text-lg text-gray-300">Seamlessly bridging the Atlantic via our strategic hubs.</p>
+        </div>
+    </header>
+
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900">Primary Logistics Hubs</h2>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">We operate specialized facilities in three key locations
+                    to ensure your cargo is handled with local expertise and international standards.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="text-center group">
+                    <div class="mb-6 relative inline-block">
+                        <img src="IMG/Luanda.png"
+                            alt="Luanda Port"
+                            class="w-48 h-48 rounded-full object-cover border-4 border-orange-500 mx-auto shadow-xl">
+                        <span
+                            class="absolute bottom-0 right-4 bg-slate-900 text-white p-2 rounded-full text-xs font-bold uppercase">HQ</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-2">Luanda, Angola</h3>
+                    <p class="text-gray-600 text-sm">Our main operational base. Expertise in Port of Luanda clearances
+                        and nationwide distribution across all 18 provinces.</p>
+                </div>
+
+                <div class="text-center group">
+                    <div class="mb-6 relative inline-block">
+                        <img src="IMG/Lisboa.png"
+                            alt="Lisbon Port"
+                            class="w-48 h-48 rounded-full object-cover border-4 border-slate-300 mx-auto shadow-xl group-hover:border-orange-500 transition">
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-2">Lisbon, Portugal</h3>
+                    <p class="text-gray-600 text-sm">The Gateway to Europe. Specialized in cargo consolidation for
+                        Angolan SMEs and luxury retail logistics.</p>
+                </div>
+
+                <div class="text-center group">
+                    <div class="mb-6 relative inline-block">
+                        <img src="IMG/USA.png"
+                            alt="Houston Port"
+                            class="w-48 h-48 rounded-full object-cover border-4 border-slate-300 mx-auto shadow-xl group-hover:border-orange-500 transition">
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-2">Houston, USA</h3>
+                    <p class="text-gray-600 text-sm">The Energy Corridor. Dedicated to Oil & Gas equipment transport and
+                        heavy industrial machinery sourcing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-slate-900 text-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between mb-12">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-3xl font-bold">Estimated Transit Times</h2>
+                    <p class="text-gray-400 mt-2">Standard timelines for planning your supply chain.</p>
+                </div>
+                <div class="bg-orange-500 px-4 py-2 rounded text-xs font-bold uppercase tracking-widest">
+                    Real-Time Tracking Included
+                </div>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="border-b border-slate-700 text-gray-400 uppercase text-xs">
+                            <th class="py-4 px-6">Route Lane</th>
+                            <th class="py-4 px-6">Method</th>
+                            <th class="py-4 px-6">Frequency</th>
+                            <th class="py-4 px-6">Duration</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-200">
+                        <tr class="border-b border-slate-800 hover:bg-slate-800/50 transition">
+                            <td class="py-6 px-6 font-semibold">Lisbon <i
+                                    class="fas fa-arrow-right mx-2 text-orange-500"></i> Luanda</td>
+                            <td class="py-6 px-6"><i class="fas fa-ship mr-2"></i> Ocean (FCL)</td>
+                            <td class="py-6 px-6">Weekly</td>
+                            <td class="py-6 px-6">14 - 18 Days</td>
+                        </tr>
+                        <tr class="border-b border-slate-800 hover:bg-slate-800/50 transition">
+                            <td class="py-6 px-6 font-semibold">Houston <i
+                                    class="fas fa-arrow-right mx-2 text-orange-500"></i> Luanda</td>
+                            <td class="py-6 px-6"><i class="fas fa-ship mr-2"></i> Ocean (FCL)</td>
+                            <td class="py-6 px-6">Fortnightly</td>
+                            <td class="py-6 px-6">28 - 35 Days</td>
+                        </tr>
+                        <tr class="border-b border-slate-800 hover:bg-slate-800/50 transition">
+                            <td class="py-6 px-6 font-semibold">Any Hub <i
+                                    class="fas fa-arrow-right mx-2 text-orange-500"></i> Luanda</td>
+                            <td class="py-6 px-6"><i class="fas fa-plane mr-2"></i> Air Cargo</td>
+                            <td class="py-6 px-6">Daily</td>
+                            <td class="py-6 px-6">2 - 5 Days</td>
+                        </tr>
+                        <tr class="hover:bg-slate-800/50 transition">
+                            <td class="py-6 px-6 font-semibold">Luanda <i
+                                    class="fas fa-arrow-right mx-2 text-orange-500"></i> Provinces</td>
+                            <td class="py-6 px-6"><i class="fas fa-truck mr-2"></i> Inland Road</td>
+                            <td class="py-6 px-6">Daily</td>
+                            <td class="py-6 px-6">1 - 4 Days</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="mt-8 text-xs text-gray-500 italic">*Times are estimates and subject to customs processing and
+                weather conditions.</p>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="bg-slate-100 rounded-2xl p-12 text-center border-2 border-dashed border-slate-300">
+                <i class="fas fa-map-marked-alt text-6xl text-slate-300 mb-6"></i>
+                <h3 class="text-2xl font-bold text-slate-800">Interactive Network Map</h3>
+                <p class="text-gray-500 mt-2 mb-8">Visualizing the flow of goods across the Atlantic.</p>
+                <div
+                    class="w-full h-64 bg-slate-200 rounded-lg flex items-center justify-center text-slate-400 font-mono text-sm">
+                    [Map API Integration Area: Angola-Portugal-USA Connectors]
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 text-gray-400 py-12">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <div class="text-white text-xl font-bold mb-4 flex items-center">
+                    <i class="fas fa-globe-africa text-orange-500 mr-2"></i> ORIZONTE
+                </div>
+                <p class="text-sm">Connecting markets with efficiency and reliability.</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold mb-4">Quick Links</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="index.html" class="hover:text-white">Home</a></li>
+                    <li><a href="services.html" class="hover:text-white">Services</a></li>
+                    <li><a href="global-routes.html" class="hover:text-white">Global Routes</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-bold mb-4">Contact</h3>
+                <ul class="space-y-4 text-sm">
+                    <li>Luanda HQ: +244 923 000 000</li>
+                    <li>Email: info@orizontelogistica.ao</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-bold mb-4">Newsletter</h3>
+                <form class="flex">
+                    <input type="email" placeholder="Email"
+                        class="w-full px-3 py-2 rounded-l outline-none text-slate-900">
+                    <button class="bg-orange-500 text-white px-4 py-2 rounded-r hover:bg-orange-600">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="container mx-auto px-6 mt-12 pt-8 border-t border-slate-800 text-center text-xs">
+            &copy; 2024 Orizonte Logística. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script>
+        // Universal Mobile Menu Toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileBtn && mobileMenu) {
+            mobileBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
+
+    <script type="text/javascript">
+    // 1. Inicializa o motor do Google
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            includedLanguages: 'en,pt',
+            autoDisplay: false
+        }, 'google_translate_element');
+    }
+
+    // 2. Função para trocar o idioma com verificação de erro
+    function changeLanguage(lang) {
+        const selectField = document.querySelector(".goog-te-combo");
+        if (selectField) {
+            selectField.value = lang;
+            selectField.dispatchEvent(new Event('change'));
+        } else {
+            alert("O tradutor está a carregar. Por favor, aguarde 2 segundos e tente de novo.");
+        }
+    }
+
+    // 3. Configura os cliques assim que a página abre
+    document.addEventListener('DOMContentLoaded', function() {
+    const btnPt = document.getElementById('lang-pt');
+    const btnEn = document.getElementById('lang-en');
+
+    function updateStyles(activeBtn, inactiveBtn) {
+        // Estilo para o botão ATIVO
+        activeBtn.classList.add('font-bold', 'text-white');
+        activeBtn.classList.remove('font-normal', 'text-gray-400');
+
+        // Estilo para o botão INATIVO
+        inactiveBtn.classList.add('font-normal', 'text-gray-400');
+        inactiveBtn.classList.remove('font-bold', 'text-white');
+    }
+
+    if (btnPt) {
+        btnPt.addEventListener('click', (e) => {
+            e.preventDefault();
+            changeLanguage('pt');
+            updateStyles(btnPt, btnEn);
+        });
+    }
+
+    if (btnEn) {
+        btnEn.addEventListener('click', (e) => {
+            e.preventDefault();
+            changeLanguage('en');
+            updateStyles(btnEn, btnPt);
+        });
+    }
+});
+</script>
+
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+
+</html>

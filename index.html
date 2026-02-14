@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orizonte Logística | Global Shipping Solutions</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .hero-bg {
+            background-image: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.7)), url('https://images.unsplash.com/photo-1494412574643-35d324688b91?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .text-orizonte-blue { color: #0f172a; }
+        .bg-orizonte-blue { background-color: #0f172a; }
+        .text-orizonte-orange { color: #f97316; }
+        .bg-orizonte-orange { background-color: #f97316; }
+
+        /* Estilo base para os links */
+/* Navigation Base */
+.nav-link {
+    transition: all 0.3s ease;
+    padding-bottom: 4px;
+}
+
+/* Desktop Highlight */
+.nav-link-active {
+    color: #f97316 !important; /* Orizonte Orange */
+    border-bottom: 2px solid #f97316;
+}
+
+/* Mobile Highlight */
+.mobile-link-active {
+    color: #f97316 !important;
+    font-weight: bold;
+    border-left: 4px solid #f97316;
+    padding-left: 8px;
+}
+    </style>
+
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    
+
+    <div class="bg-slate-900 text-gray-300 text-sm py-2">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="hidden md:flex space-x-6">
+                <a href="https://wa.me/qr/DVTDK7MCDLCLO1"><span><i class="fas fa-phone-alt mr-2 text-orange-500"></i> +244 945 32 11 86</span></a>
+                <a href="mailto:ferreira.korp@gmail.com"><span><i class="fas fa-envelope mr-2 text-orange-500"></i> ferreira.korp@gmail.com</span></a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="javascript:void(0)" id="lang-pt" class="hover:text-white transition">PT</a>
+                <span class="text-gray-600">|</span>
+                <a href="javascript:void(0)" id="lang-en" class="hover:text-white transition">EN</a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-slate-900 tracking-tighter flex items-center">
+                    <i class="fas fa-globe-africa text-orange-500 mr-2"></i>
+                    ORIZONTE <span class="text-slate-500 font-light ml-1">LOGÍSTICA</span>
+                </a>
+
+                <div class="hidden md:flex space-x-8 font-medium text-slate-700">
+                    <a href="index.html" class="nav-link nav-link-active">Home</a>
+                    <a href="services.html" class="nav-link hover:text-orange-500 transition">Services</a>
+                    <a href="global-routes.html" class="nav-link hover:text-orange-500 transition">Global Routes</a>
+                    <a href="about-us.html" class="nav-link hover:text-orange-500 transition">About Us</a>
+                    <a href="qoutes.html" class="bg-orange-500 text-white px-5 py-2 rounded hover:bg-orange-600 transition">Get a Quote</a>
+                </div>
+
+                <button id="mobile-menu-btn" class="md:hidden text-slate-700">
+    <i class="fas fa-bars text-2xl"></i>
+</button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t p-4">
+            <a href="index.html" class="block py-2 mobile-link-active">Home</a>
+            <a href="services.html" class="block py-2 text-slate-700">Services</a>
+            <a href="global-routes.html" class="block py-2 text-slate-700">Global Routes</a>
+            <a href="about-us.html" class="block py-2 text-slate-700">About Us</a>             
+            <a href="qoutes.html" class="block py-2 text-orange-600 font-bold">Get a Quote</a>
+        </div>
+
+    </nav>
+
+    <header id="home" class="relative h-[600px] flex items-center justify-center overflow-hidden">
+    <video 
+        src="IMG/SHIPPING.mp4" 
+        autoplay 
+        muted 
+        loop 
+        playsinline
+        class="absolute z-0 w-full h-full object-cover">
+    </video>
+
+    <div class="absolute inset-0 bg-black/60 z-10"></div>
+
+    <div class="container mx-auto px-6 text-center text-white z-20">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">
+            Connecting Angola <br> to the <span class="text-orange-500">World</span>
+        </h1>
+        <p class="text-xl md:text-2xl mb-8 text-gray-200 font-light">
+            Premium freight solutions linking Luanda, Lisbon, and Houston.
+        </p>
+        
+        <div class="bg-white p-2 rounded-lg shadow-2xl max-w-2xl mx-auto flex flex-col md:flex-row">
+            <div class="flex-grow flex items-center px-4 py-3 md:py-0 border-b md:border-b-0 md:border-r border-gray-200">
+                <i class="fas fa-box-open text-gray-400 mr-3"></i>
+                <input type="text" placeholder="Enter Tracking Number (e.g., ORZ-8892)" class="w-full outline-none text-gray-700">
+            </div>
+            <button onclick="alert('Tracking system integration...')" class="bg-slate-900 text-white px-8 py-3 rounded hover:bg-slate-800 transition font-bold uppercase tracking-wide">
+                Track Cargo
+            </button>
+        </div>
+    </div>
+</header>
+
+    <section id="routes" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-900">Strategic Trade Lanes</h2>
+                <div class="h-1 w-20 bg-orange-500 mx-auto mt-4"></div>
+                <p class="text-gray-600 mt-4">Specialized rapid transit corridors for import and export.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center hover:shadow-lg transition">
+                    <div class="flex justify-center items-center mb-4 space-x-4 text-2xl font-bold text-slate-800">
+                        <span>🇦🇴 Luanda</span>
+                        <i class="fas fa-exchange-alt text-orange-500"></i>
+                        <span>🇵🇹 Lisbon</span>
+                    </div>
+                    <p class="text-gray-600">Daily air freight and weekly sea cargo consolidation. The bridge to Europe.</p>
+                </div>
+
+                <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center hover:shadow-lg transition">
+                    <div class="flex justify-center items-center mb-4 space-x-4 text-2xl font-bold text-slate-800">
+                        <span>🇦🇴 Luanda</span>
+                        <i class="fas fa-exchange-alt text-orange-500"></i>
+                        <span>🇺🇸 Houston</span>
+                    </div>
+                    <p class="text-gray-600">Specialized equipment transport and oil & gas logistics services.</p>
+                </div>
+
+                <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center hover:shadow-lg transition">
+                    <div class="flex justify-center items-center mb-4 space-x-4 text-2xl font-bold text-slate-800">
+                        <span>Global</span>
+                        <i class="fas fa-arrow-right text-orange-500"></i>
+                        <span>🇦🇴 Angola</span>
+                    </div>
+                    <p class="text-gray-600">Door-to-door delivery across all 18 provinces of Angola.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-16 bg-slate-900 text-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Comprehensive Logistics</h2>
+                    <p class="text-gray-400 mb-6">
+                        We understand the complexities of Angolan customs and international shipping standards. Orizonte Logística ensures your cargo moves smoothly from origin to destination.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-orange-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-bold text-lg">Ocean Freight</h4>
+                                <p class="text-sm text-gray-400">FCL & LCL shipments handling from major global ports.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-orange-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-bold text-lg">Air Cargo</h4>
+                                <p class="text-sm text-gray-400">Express delivery for time-sensitive goods.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-orange-500 mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-bold text-lg">Customs Clearance</h4>
+                                <p class="text-sm text-gray-400">Expert handling of despacho aduaneiro in Luanda and Lobito.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Shipping Container" class="rounded-lg shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Warehouse" class="rounded-lg shadow-lg mt-8">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 bg-orange-500">
+        <div class="container mx-auto px-6 text-center text-white">
+            <h2 class="text-3xl font-bold mb-4">Ready to ship to or from Angola?</h2>
+            <p class="text-xl mb-8 opacity-90">Get a competitive quote within 24 hours.</p>
+            <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">
+                <a href="#" class="bg-slate-900 hover:bg-slate-800 text-white py-3 px-8 rounded font-bold transition">Request Quote</a>
+                <a href="#" class="bg-white text-orange-600 hover:bg-gray-100 py-3 px-8 rounded font-bold transition">Contact Sales</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 text-gray-400 py-12">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <div class="text-white text-xl font-bold mb-4 flex items-center">
+                    <i class="fas fa-globe-africa text-orange-500 mr-2"></i> ORIZONTE
+                </div>
+                <p class="text-sm">Your trusted partner for international logistics connecting Angola, Portugal, and the USA.</p>
+            </div>
+            
+            <div>
+                <h3 class="text-white font-bold mb-4">Quick Links</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-white">Track Shipment</a></li>
+                    <li><a href="#" class="hover:text-white">Request Quote</a></li>
+                    <li><a href="#" class="hover:text-white">Schedules</a></li>
+                    <li><a href="#" class="hover:text-white">Company Profile</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-white font-bold mb-4">Our Offices</h3>
+                <ul class="space-y-4 text-sm">
+                    <li>
+                        <strong class="text-gray-200">Luanda, AO</strong><br>
+                        Rua Major Kanhangulo, Ingombota
+                    </li>
+                    <li>
+                        <strong class="text-gray-200">Lisbon, PT</strong><br>
+                        Av. da Liberdade (Representative)
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-white font-bold mb-4">Stay Updated</h3>
+                <form class="flex">
+                    <input type="email" placeholder="Email address" class="w-full px-3 py-2 rounded-l outline-none text-slate-900">
+                    <button class="bg-orange-500 text-white px-4 py-2 rounded-r hover:bg-orange-600">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="container mx-auto px-6 mt-12 pt-8 border-t border-slate-800 text-center text-xs">
+            &copy; 2024 Orizonte Logística. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script>
+        // Universal Mobile Menu Toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileBtn && mobileMenu) {
+            mobileBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
+
+    <div id="google_translate_element" style="display:none !important;"></div>
+
+
+<script type="text/javascript">
+    // 1. Inicializa o motor do Google
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            includedLanguages: 'en,pt',
+            autoDisplay: false
+        }, 'google_translate_element');
+    }
+
+    // 2. Função para trocar o idioma com verificação de erro
+    function changeLanguage(lang) {
+        const selectField = document.querySelector(".goog-te-combo");
+        if (selectField) {
+            selectField.value = lang;
+            selectField.dispatchEvent(new Event('change'));
+        } else {
+            alert("O tradutor está a carregar. Por favor, aguarde 2 segundos e tente de novo.");
+        }
+    }
+
+    // 3. Configura os cliques assim que a página abre
+    document.addEventListener('DOMContentLoaded', function() {
+    const btnPt = document.getElementById('lang-pt');
+    const btnEn = document.getElementById('lang-en');
+
+    function updateStyles(activeBtn, inactiveBtn) {
+        // Estilo para o botão ATIVO
+        activeBtn.classList.add('font-bold', 'text-white');
+        activeBtn.classList.remove('font-normal', 'text-gray-400');
+
+        // Estilo para o botão INATIVO
+        inactiveBtn.classList.add('font-normal', 'text-gray-400');
+        inactiveBtn.classList.remove('font-bold', 'text-white');
+    }
+
+    if (btnPt) {
+        btnPt.addEventListener('click', (e) => {
+            e.preventDefault();
+            changeLanguage('pt');
+            updateStyles(btnPt, btnEn);
+        });
+    }
+
+    if (btnEn) {
+        btnEn.addEventListener('click', (e) => {
+            e.preventDefault();
+            changeLanguage('en');
+            updateStyles(btnEn, btnPt);
+        });
+    }
+});
+</script>
+
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
